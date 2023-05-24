@@ -1,0 +1,59 @@
+﻿@using EntityLayer.Entities
+@model List<Haberler>
+
+
+<div class="blog" id="blog">
+	<div class="container">
+		<h3 class="title">Son Haberler</h3>
+			<br />
+				@foreach (var item in Model)
+					{
+						if (@item.Status == true)
+							{
+								<div class="blog-grid-w3-agileits">
+									<div class=" col-md-7 "> <img src="@item.Resim"  class="img-responsive" />
+										<a  href="#" data-toggle="modal" data-target="#myModal2"></a>
+									</div>
+										<div class=" col-md-5 blog-info-w3layouts">
+											<h6> <a  href="#" data-toggle="modal" data-target="#myModal2">@item.Ttile</a></h6>
+											<div class="inner-info">
+												<a href="#" class="blog-text-w3ls bar"></a> <span>@item.Tarih.ToString("dd/MM/yyyy")</span>
+												<p class="para-w3-agileits">@item.ozet</p>
+											</div>
+											<a  href="#" class="blog-more-agile" data-toggle="modal" data-target="#myModal2">Beni Oku</a>
+			
+										</div>
+										<div class="clearfix"></div>
+								</div>
+					}
+							}
+		
+	</div>
+</div>
+					
+
+										<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+							<div class="modal-dialog">
+							<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+
+										@foreach (var item in Model)
+											{
+												if (@item.Status == true)
+													{
+			
+														<img src="@item.Resim" alt=" " class="img-responsive">
+														<h5>@item.Ttile</h5>
+														<p>@item.Description</p>
+									
+													}
+											}
+
+									</div>
+								</div>
+							</div>
+						</div>
+										
+
+

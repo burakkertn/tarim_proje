@@ -1,0 +1,75 @@
+﻿@model Tarım_Sitesi.Models.LoginViewModel
+@{
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Admin Giriş Formu</title>
+
+	<!-- Meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Style -->
+	<link rel="stylesheet" href="~/snow-login-form-starter/css/style.css" type="text/css" media="all" />
+</head>
+
+<body>
+	<!-- login form -->
+	<section class="w3l-login">
+		<div class="overlay">
+			<div class="wrapper">
+				<div class="logo">
+					<a class="brand-logo" href="index.html">Admin  Giriş Paneli</a>
+				</div>
+				<div class="form-section">
+					<h3>Hoşgeldiniz</h3>
+					
+					<form  method="post" class="signin-form">
+						<div class="form-input">
+							<input type="text" asp-for="username" placeholder="Kullanıcı Adı" required="" autofocus>
+						</div>
+						<div class="form-input">
+							<input type="password" asp-for="password" placeholder="Şifre" required="">
+							@if (!string.IsNullOrEmpty(TempData["ErrorMessage"] as string))
+							{
+								<div class="alert alert-danger">
+									@TempData["ErrorMessage"]
+								</div>
+							}
+						</div>
+						<label class="check-remaind">
+							<input type="checkbox">
+							<span class="checkmark"></span>
+							<p class="remember">Beni Unutma :)</p>
+						</label>
+						<button type="submit" class="btn btn-primary theme-button mt-4">Giriş Yap</button>
+						<div class="new-signup">
+							<a href="#reload" class="signuplink">Kullanıcı Adını ya da Şifreni Mi Unuttun?</a>
+						</div>
+					</form>
+					<p class="signup">Henüz Hesabınız Yok Mu? Üyel Ol. <a href="/Login/SignUp" class="signuplink"> Üye Ol </a></p>
+				</div>
+			</div>
+		</div>
+		<div id='stars'></div>
+		<div id='stars2'></div>
+		<div id='stars3'></div>
+
+		<!-- copyright -->
+		
+		<!-- //copyright -->
+	</section>
+
+	<!-- /login form -->
+</body>
+
+</html>

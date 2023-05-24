@@ -1,0 +1,55 @@
+﻿@using EntityLayer.Entities
+@model List<Contact>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Admin_Layout.cshtml";
+}
+
+  <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Mesaj Listesi</h4>
+                 
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                          <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Mail</th>
+                               
+                                     <th>Tarih</th>
+                                  
+                                 
+                                    <th>Mesaj Detay</th>
+                        </tr>
+                      </thead>
+@*--------------------------------------------------------------------------------------------------------------------------------------------------*@
+                      <tbody>
+                      @foreach(var item in Model)
+
+                        {
+                            <tr>
+                                 
+                                  <td >@item.ID</td>
+                                 <td>@item.Name</td>
+                                 <td>@item.Mail</td>
+                                                                <td>@item.Tarih</td>
+
+                                
+                                
+                                  <td> <a href="/Contact/UpdateContact/@item.ID" class="btn btn-outline-success">Mesajı Gör</a> </td>
+
+                             
+                            </tr>                       
+                        }
+                      
+                      </tbody>
+@*--------------------------------------------------------------------------------------------------------------------------------------------------*@
+                    </table>
+                    <br />
+                  </div>
+                </div>
+              </div>
+            </div>
+

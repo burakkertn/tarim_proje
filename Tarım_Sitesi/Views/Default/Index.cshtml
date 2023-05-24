@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+@await Component.InvokeAsync("_HeadPartial")
+	<body>
+		<div class="header">
+			<div class="container">
+				@await Component.InvokeAsync("_TopAddress")
+				@await Component.InvokeAsync("_SosyalMedyaPartial")
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	
+
+				@await Component.InvokeAsync("_SliderPartial")
+		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+							
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4>BE Tarım</h4>
+							<img src="~/web/images/banner1.jpg" alt=" " class="img-responsive">
+							<h5>TARIM DÜNYASI </h5>
+							<p>
+								Merhaba! Tarımın temel taşı olan bir platforma hoş geldiniz. Bu site, tarım sektörüne dair bilgilere erişim sağlayarak, 
+								çiftçilerin, bahçıvanların ve tarım tutkunlarının ihtiyaçlarını karşılamayı hedefliyor. Tarımsal üretimden sürdürülebilir 
+								tarım yöntemlerine, hasat dönemlerinden pazarlama stratejilerine kadar geniş bir yelpazede bilgi ve kaynaklar sunarak, 
+								tarım alanında başarıyı desteklemeyi amaçlıyoruz.Hadi, bu verimli yolculuğa birlikte başlayalım!</p>
+						</div>
+					</div>
+			</div>
+		</div>
+					@await Component.InvokeAsync("_AboutPartial")
+					@await Component.InvokeAsync("_Service_Partial")
+					@await Component.InvokeAsync("_TeamPartial")
+					@await Component.InvokeAsync("_HaberPartial")
+					@await Component.InvokeAsync("_GaleriPartial")
+		<div class="contact-agile" id="contact">
+			<div class="container">
+					@await Component.InvokeAsync("_AdresPartial")	
+					@await Html.PartialAsync("/Views/Default/SendMessage.cshtml")
+			</div>
+		</div>
+					@await Component.InvokeAsync("_MapPartail")	
+			   
+		<div class="copy">
+				<p>© @DateTime.Now.Year BE . Tüm Hakları Saklıdır  </p>
+		</div>
+@await Html.PartialAsync("/Views/Default/ScriptPartial.cshtml")
+	</body>
+</html>
+
+
+
