@@ -18,6 +18,8 @@ Verilerin eklendiği, düzenleyebileceği ve silebileceği, şifresini sıfırla
 - JavaScript, jQuery, C#
 - HTML, CSS
 
+  
+# Görseller
 
 ## Ana Sayfa
 ![UI](https://github.com/burakkertn/tarim_proje/assets/99614754/59137291-8d18-4ce1-9b82-fc6f4ad5d52c)
@@ -46,6 +48,10 @@ Verilerin eklendiği, düzenleyebileceği ve silebileceği, şifresini sıfırla
 ![Admin4](https://github.com/burakkertn/tarim_proje/assets/99614754/f7054cde-49d7-4c3d-be67-e954138ec002)
 
 
+#Video
+
+
+https://github.com/burakkertn/tarim_proje/assets/99614754/e8efa773-c142-4fef-90df-f3b62b4fc415
 
 
 
