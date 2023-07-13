@@ -2,7 +2,7 @@
  .NET Core - Tarım Projesi 
 
 Admin Panelli, UI'ın Tamamen Dinamik olduğu ve
-Verilerin eklendiği, düzenleyebileceği ve silebileceği, şifresini sıfırlayabileceği bir .NET Core  projesi, yönetici rollunu içerir. 
+Verilerin eklendiği, düzenleyebileceği ve silinebileceği bir .NET Core  projesi
 
 
 
