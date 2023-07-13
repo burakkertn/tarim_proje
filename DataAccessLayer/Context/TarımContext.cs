@@ -13,7 +13,7 @@ namespace DataAccessLayer.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=EIDVOSTRO03\\BURAKSERVER;database= DbTarim;integrated security=true");
+            optionsBuilder.UseSqlServer("server=BURAK\\SQLEXPRESS;database= DbTarim;integrated security=true");
         }
         public DbSet<Adres> Adresler { get; set; }
 
