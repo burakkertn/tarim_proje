@@ -1,27 +1,22 @@
-<a name="readme-top"></a>
- .NET Core - Tarım Projesi 
+<h1>Kullanılan Arayüzler</h1>
 
-Admin Panelli, UI'ın Tamamen Dinamik olduğu ve
-Verilerin eklendiği, düzenleyebileceği ve silinebileceği bir .NET Core  projesi
+<p>-UI</p>
+<p>-Admin paneli</p>
+<p>-Login Paneli</p>
+
+<h1>Proje'de kullanılan Teknolojiler</h1>
+<p>- .NET Core 6.0</p>
+<p>- MsSql</p>
+<p>- MVC</p>
+<p>- Entity Framework</p>
+<p>- Identity Framework</p>
 
 
-
-
-
-
-
-## Used
-
-- .NET Core 6.0
-- Entity Framework
-- Identity Framework
-- JavaScript, jQuery, C#
-- HTML, CSS
 
   
 # Görseller
 
-## Ana Sayfa
+## UI
 ![UI](https://github.com/burakkertn/tarim_proje/assets/99614754/59137291-8d18-4ce1-9b82-fc6f4ad5d52c)
 
 ![UI2](https://github.com/burakkertn/tarim_proje/assets/99614754/c0e22132-6cdc-4cca-9ee8-19548c0597ba)
@@ -32,7 +27,7 @@ Verilerin eklendiği, düzenleyebileceği ve silinebileceği bir .NET Core  proj
 
 ![UI5](https://github.com/burakkertn/tarim_proje/assets/99614754/a12e0aef-fce1-49a5-ae1e-0551a0ccb94d)
 
-## Login Ekranı
+## Login Paneli
 
 ![UI6](https://github.com/burakkertn/tarim_proje/assets/99614754/0ccbc230-502e-4148-a558-e404ba7d6a57)
 
